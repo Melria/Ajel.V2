@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-md font-medium inline-flex items-center justify-center;
+  }
+
+  .btn-primary {
+    @apply bg-slate-800 text-white;
+  }
+
+  .btn-text {
+    @apply text-slate-800 bg-transparent;
+  }
+
+  .logo-ticker-image {
+    @apply h-10 w-auto;
+  }
+
+  .badge {
+    @apply text-sm inline-flex border border-[#222]/10 px-3 py-1 rounded-sm;
+  }
+
+  .card-class {
+    @apply p-10 border border-solid border-slate-800/10 rounded-sm shadow-lg max-w-xs w-full;
+  }
+}
