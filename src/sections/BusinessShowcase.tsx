@@ -28,7 +28,7 @@ export const BusinessShowcase = () => {
           <div className="max-w-[540px] mx-auto">
             <div className="flex justify-center">
               <div className="badge">
-                Lorem ipsum dolor sit amet consectetur.
+                A PROPOS DE NOUS
               </div>
             </div>
             <h2 className="font-extrabold text-3xl text-center md:text-[54px] md:leading-[60px] bg-gradient-to-b from-black to-slate-700 text-transparent bg-clip-text mt-5 my-5">

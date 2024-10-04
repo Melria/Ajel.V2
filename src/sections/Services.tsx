@@ -32,11 +32,10 @@ const Services = () => {
     >
       <div className="container mx-auto">
         <h2 className="font-extrabold text-2xl text-center md:text-[46px] md:leading-[60px] bg-gradient-to-b from-black to-slate-700 text-transparent bg-clip-text mt-5 my-5">
-          Nos services
+        Nos Dirigeants
         </h2>
         <p className="my-10 text-center text-[22px] leading-[30px] text-slate-800">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-          impedit repellendus assumenda
+        Nos dirigeants sont des visionnaires engagés, dédiés à promouvoir l'entrepreneuriat et l'éducation au Cameroun.
         </p>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {serviceData.map((service, index) => (

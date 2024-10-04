@@ -14,10 +14,10 @@ export const Header = () => {
       <header className="sticky top-0 backdrop-blur-sm z-20 scroll-smooth">
         <div className="flex justify-center items-center py-3 bg-slate-700 text-white text-sm mx-auto gap-3">
           <p className="hidden md:block ml-5 text-slate-50/80">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus?
+          Chez AJEL, nous croyons en l'avenir des jeunes talents.
           </p>
-          <p className="ml-5">+237 6XX XXX XXX</p>
-          <p>xxxxxxxx@ajel.com</p>
+          <p className="ml-5">+237 6 90 32 87 34</p>
+          <p>info@ajel-osi.org</p>
         </div>
         <div className="py-5">
           <div className="container">

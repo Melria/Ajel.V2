@@ -44,8 +44,8 @@ const Contact = () => {
               Contactez-nous
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
-              corrupti tempore commodi explicabo earum incidunt!
+            Pour toute question ou demande d'information, n'hésitez pas à nous contacter. 
+            Nous sommes là pour vous aider et vous fournir des réponses rapides et précises.
             </p>
             <dl className="mt-10 space-y-4 text-base leading-7 text-gray-600">
               <div className="flex gap-x-4">
@@ -70,9 +70,9 @@ const Contact = () => {
                 <dd>
                   <a
                     className="hover:text-gray-900"
-                    href="mailto:contact@yourcompany.com"
+                    href="mailto:info@ajel-osi.org"
                   >
-                    contact@yourcompany.com
+                    info@ajel-osi.org
                   </a>
                 </dd>
               </div>
@@ -95,7 +95,7 @@ const Contact = () => {
                     ></path>
                   </svg>
                 </dt>
-                <dd>Douala, Cameroun</dd>
+                <dd>Avant Tradex Logpom Douala, Cameroun venant de Logbessou</dd>
               </div>
             </dl>
           </div>

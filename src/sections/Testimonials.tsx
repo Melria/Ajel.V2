@@ -1,15 +1,15 @@
 "use client";
 
 import React from "react";
-import avatar1 from "@/assets/avatar-1.png";
-import avatar2 from "@/assets/avatar-2.png";
-import avatar3 from "@/assets/avatar-3.png";
-import avatar4 from "@/assets/avatar-4.png";
-import avatar5 from "@/assets/avatar-5.png";
-import avatar6 from "@/assets/avatar-6.png";
-import avatar7 from "@/assets/avatar-7.png";
-import avatar8 from "@/assets/avatar-8.png";
-import avatar9 from "@/assets/avatar-9.png";
+import avatar1 from "@/assets/user.png";
+import avatar2 from "@/assets/user.png";
+import avatar3 from "@/assets/user.png";
+import avatar4 from "@/assets/user.png";
+import avatar5 from "@/assets/user.png";
+import avatar6 from "@/assets/user.png";
+import avatar7 from "@/assets/user.png";
+import avatar8 from "@/assets/user.png";
+import avatar9 from "@/assets/user.png";
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 import { motion } from "framer-motion";
@@ -17,51 +17,53 @@ import { motion } from "framer-motion";
 // Testimonials data
 const testimonials = [
   {
-    text: "As a seasoned designer always on the lookout for innovative tools, Framer.com instantly grabbed my attention.",
+    text: "AJEL a transformé notre approche stratégique. Grâce à leur expertise en suivi de projets, nous avons atteint nos objectifs plus rapidement que prévu.",
     imageSrc: avatar1.src,
-    name: "Jamie Rivera",
+    name: "Emilie Nguimkeu",
   },
   {
-    text: "Our team's productivity has skyrocketed since we started using this tool.",
+    text: "L'accompagnement d'AJEL a boosté notre productivité. Leur soutien constant est essentiel pour notre équipe.",
     imageSrc: avatar2.src,
-    name: "Josh Smith",
+    name: "Boris Tchoua",
   },
   {
-    text: "This app has completely transformed how I manage my projects and deadlines.",
+    text: "Avec AJEL, j'ai pu gérer mes projets avec une sérénité inégalée. Leur suivi personnalisé est vraiment précieux.",
     imageSrc: avatar3.src,
-    name: "Morgan Lee",
+    name: "Amina Ndo",
   },
   {
-    text: "I was amazed at how quickly we were able to integrate this app into our workflow.",
+    text: "Leur capacité à comprendre nos besoins et à nous offrir des conseils adaptés a été déterminante pour notre réussite.",
     imageSrc: avatar4.src,
-    name: "Casey Jordan",
+    name: "Kofi Makoumbou",
   },
   {
-    text: "Planning and executing events has never been easier. This app helps me keep track of all the moving parts, ensuring nothing slips through the cracks.",
+    text: "AJEL rend la planification d'événements beaucoup plus facile. Leur accompagnement à chaque étape garantit une exécution sans faille.",
     imageSrc: avatar5.src,
-    name: "Taylor Kim",
+    name: "Léa Mbouda",
   },
   {
-    text: "The customizability and integration capabilities of this app are top-notch.",
+    text: "Les conseils d'AJEL en gestion de projet sont inestimables. Ils savent comment nous aider à surmonter tous nos défis.",
     imageSrc: avatar6.src,
-    name: "Riley Smith",
+    name: "Jules Ndong",
   },
   {
-    text: "Adopting this app for our team has streamlined our project management and improved communication across the board.",
+    text: "Depuis que nous travaillons avec AJEL, notre communication interne s'est améliorée, rendant notre collaboration plus fluide.",
     imageSrc: avatar7.src,
-    name: "Jordan Patels",
+    name: "Nina Essono",
   },
   {
-    text: "With this app, we can easily assign tasks, track progress, and manage documents all in one place.",
+    text: "Avec AJEL, nous avons des outils et des conseils qui facilitent le suivi de nos progrès et nous aident à atteindre nos objectifs sans stress.",
     imageSrc: avatar8.src,
-    name: "Sam Dawson",
+    name: "Olivier Etonde",
   },
   {
-    text: "Its user-friendly interface and robust features support our diverse needs.",
+    text: "L'approche personnalisée et l'écoute active d'AJEL font d'eux un partenaire essentiel pour notre développement.",
     imageSrc: avatar9.src,
-    name: "Casey Harper",
+    name: "Fatou Boubakari",
   },
 ];
+
+
 
 const firstColumn = testimonials.slice(0, 3);
 const secondColumn = testimonials.slice(3, 6);
@@ -119,20 +121,18 @@ const TestimonialsColumn = (props: {
 // Main Testimonials Component
 export const Testimonials = () => {
   return (
-    <section className="bg-white">
-      <div className="container">
+    <section className="bg-white mt-2.5">
+      <div className="container mt-2.5">
         <div className="flex justify-center">
-          <div className="badge">Testimonials</div>
+          <div className="badge">Témoignage</div>
         </div>
         <div>
           <h2 className="font-extrabold text-2xl text-center md:text-[46px] md:leading-[60px] bg-gradient-to-b from-black to-slate-700 text-transparent bg-clip-text mt-5 my-5">
             Ils nous font confiance
           </h2>
-          <p className="mt-5 text-center text-[22px] leading-[30px] text-slate-800">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis
-            labore nulla dolores exercitationem, optio velit soluta atque odio
-            id nisi.
-          </p>
+          {/* <p className="mt-5 text-center text-[22px] leading-[30px] text-slate-800">
+            Aucune description.
+          </p> */}
         </div>
         <div className="flex justify-center gap-6 [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)] mt-10 max-h-[738px] overflow-hidden ">
           <TestimonialsColumn testimonials={firstColumn} duration={15} />

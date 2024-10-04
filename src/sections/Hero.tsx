@@ -34,13 +34,12 @@ export const Hero = () => {
         <div className="container">
           <div className="md:flex items-center">
             <div className="md:w-[478px]">
-              <div className="badge">ajel-corporation v2.0</div>
+              {/* <div className="badge">ajel-corporation v2.0</div> */}
               <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-b from-orange-500 to-orange-600 text-transparent bg-clip-text mt-6 ">
-                Des outils taillés pour vous aider
+                Des solutions adaptées à vos besoins.
               </h1>
               <p className="text-xl text-slate-800 mt-6">
-               Nous avons pris l’engagement d’œuvrer dans un cadre commun et noble afin de  donner notre participation à l’éducation et à la promotion de l’entreprenariat au Cameroun. 
-Notre devise: « JEUNES, PENSONS A DEMAIN ».  
+              Nous nous engageons à œuvrer ensemble pour contribuer à l'éducation et à la promotion de l'entrepreneuriat au Cameroun. Notre devise : « JEUNES, PENSONS À DEMAIN ». 
 
               </p>
               <div className="flex gap-1 items-center mt-[30px] ">

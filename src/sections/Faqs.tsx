@@ -32,104 +32,72 @@ const Faqs = () => {
               FAQ
             </h2>
             <p className="mt-3 text-lg text-neutral-500 md:text-xl">
-              Frequenty asked questions
+              Questions fréquemment posées
             </p>
           </div>
           <div className="mx-auto mt-8 grid max-w-xl divide-y divide-neutral-200">
             <div className="py-5">
               <details className="group">
                 <summary className="flex cursor-pointer list-none items-center justify-between font-medium">
-                  <span> How does the billing work?</span>
+                  <span>Quelle est la mission d'AJEL ?</span>
                   <span className="transition group-open:rotate-180">
                     <SvgDown />
                   </span>
                 </summary>
                 <p className="group-open:animate-fadeIn mt-3 text-neutral-600">
-                  Springerdata offers a variety of billing options, including
-                  monthly and annual subscription plans, as well as
-                  pay-as-you-go pricing for certain services. Payment is
-                  typically made through a credit card or other secure online
-                  payment method.
+                  Nous avons pris l'engagement d'œuvrer dans un cadre commun et noble afin de contribuer à l'éducation et à la promotion de l'entrepreneuriat au Cameroun. Notre devise est : « JEUNES, PENSONS À DEMAIN ».
                 </p>
               </details>
             </div>
             <div className="py-5">
               <details className="group">
                 <summary className="flex cursor-pointer list-none items-center justify-between font-medium">
-                  <span> Can I get a refund for my subscription?</span>
+                  <span>Quels types de services proposez-vous ?</span>
                   <span className="transition group-open:rotate-180">
                     <SvgDown />
                   </span>
                 </summary>
                 <p className="group-open:animate-fadeIn mt-3 text-neutral-600">
-                  We offer a 30-day money-back guarantee for most of its
-                  subscription plans. If you are not satisfied with your
-                  subscription within the first 30 days, you can request a full
-                  refund. Refunds for subscriptions that have been active for
-                  longer than 30 days may be considered on a case-by-case basis.
+                  AJEL offre une gamme de services à travers ses différentes filiales, incluant des formations professionnelles, des conseils en gestion de projets, et des solutions en marketing digital.
                 </p>
               </details>
             </div>
             <div className="py-5">
               <details className="group">
                 <summary className="flex cursor-pointer list-none items-center justify-between font-medium">
-                  <span> How do I cancel my subscription?</span>
+                  <span>Combien de filiales avez-vous ?</span>
                   <span className="transition group-open:rotate-180">
                     <SvgDown />
                   </span>
                 </summary>
                 <p className="group-open:animate-fadeIn mt-3 text-neutral-600">
-                  To cancel your subscription, you can log in to your account
-                  and navigate to the subscription management page. From there,
-                  you should be able to cancel your subscription and stop future
-                  billing.
+                  AJEL regroupe 11 filiales, chacune ayant des objectifs distincts mais travaillant toutes ensemble vers notre vision commune.
                 </p>
               </details>
             </div>
             <div className="py-5">
               <details className="group">
                 <summary className="flex cursor-pointer list-none items-center justify-between font-medium">
-                  <span> Is there a free trial?</span>
+                  <span>Comment puis-je vous contacter pour des questions ?</span>
                   <span className="transition group-open:rotate-180">
                     <SvgDown />
                   </span>
                 </summary>
                 <p className="group-open:animate-fadeIn mt-3 text-neutral-600">
-                  We offer a free trial of our software for a limited time.
-                  During the trial period, you will have access to a limited set
-                  of features and functionality, but you will not be charged.
+                  Pour toute question, vous pouvez nous contacter via notre formulaire sur le site ou par email à info@ajel-osi.org. Nous sommes là pour vous aider.
                 </p>
               </details>
             </div>
             <div className="py-5">
               <details className="group">
                 <summary className="flex cursor-pointer list-none items-center justify-between font-medium">
-                  <span> How do I contact support?</span>
+                  <span>Avez-vous des événements ou des initiatives à venir ?</span>
                   <span className="transition group-open:rotate-180">
                     <SvgDown />
                   </span>
                 </summary>
                 <p className="group-open:animate-fadeIn mt-3 text-neutral-600">
-                  If you need help with our platform or have any other
-                  questions, you can contact the company support team by
-                  submitting a support request through the website or by
-                  emailing support@ourwebsite.com.
-                </p>
-              </details>
-            </div>
-            <div className="py-5">
-              <details className="group">
-                <summary className="flex cursor-pointer list-none items-center justify-between font-medium">
-                  <span> Do you offer any discounts or promotions?</span>
-                  <span className="transition group-open:rotate-180">
-                    <SvgDown />
-                  </span>
-                </summary>
-                <p className="group-open:animate-fadeIn mt-3 text-neutral-600">
-                  We may offer discounts or promotions from time to time. To
-                  stay up-to-date on the latest deals and special offers, you
-                  can sign up for the company newsletter or follow it on social
-                  media.
+                  Oui, nous organisons régulièrement des événements et des ateliers pour encourager l'entrepreneuriat et le développement des compétences. Suivez-nous sur nos réseaux sociaux pour les annonces.
                 </p>
               </details>
             </div>
