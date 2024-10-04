@@ -8,12 +8,12 @@ const serviceData = [
     image: require('../assets/Service1.jpg'),
   },
   {
-    image: require('../assets/Service2.jpg'),
+    image: require('../assets/Service7.jpg'),
   },
   {
     image: require('../assets/Service3.jpg'),
   },
-  {
+  /* {
     image: require('../assets/Service4.jpg'),
   },
   {
@@ -21,7 +21,7 @@ const serviceData = [
   },
   {
     image: require('../assets/Service6.jpg'),
-  },
+  }, */
 ];
 
 const Services = () => {

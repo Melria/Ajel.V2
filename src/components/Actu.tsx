@@ -2,9 +2,14 @@
 
 import { Header } from "@/sections/Header";
 import React, { useState } from "react";
-import closeIcon from "@/assets/close.svg";
-import Image from "next/image";
 import ModalContent from "@/components/ModalContent";
+import image1 from "../assets/actus_img/adnova.jpg";
+import image2 from "../assets/actus_img/aec.jpg";
+import image3 from "../assets/actus_img/commerce.jpg";
+import image4 from "../assets/actus_img/connexion.jpg";
+import image5 from "../assets/actus_img/education.jpg";
+import image6 from "../assets/actus_img/decode.jpg";
+import { url } from "inspector";
 
 interface Article {
   title: string;
@@ -41,102 +46,71 @@ const Actu = () => {
 
   const articles: Article[] = [
     {
-      title: "Revenge of the Never Trumpers",
-      subtitle: "Election, Politics",
-      author: "Ahmad Sultani",
+      title: "AD NOVA - Digital Marketing",
+      subtitle: "Marketing",
+      author: "L'équipe AD NOVA",
       image:
-        "https://api.time.com/wp-content/uploads/2020/07/never-trumpers-2020-election-01.jpg?quality=85&w=1201&h=676&crop=1",
+        `url(${image1.src})`,
       content:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      tags: ["Election", "people", "Election2020", "trump", "Joe"],
-      quote:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+        "AD NOVA est un département dans DECODE spécialisé dans le marketing avec pour objectif d’aider tout business présent sur les réseaux sociaux à augmenter leur chiffre d’affaires et d’avoir plus de conversion et de digitaliser leur communication.",
+      tags: ["Marketing", "Digital", "Social Media"],
+      quote: "Augmentez votre visibilité en ligne avec AD NOVA.",
     },
     {
-      title: "Trump Steps Back Into Coronavirus Spotlight",
-      subtitle: "Politics, Election",
-      author: "John Doe",
+      title: "AEC - African and Environmental Construction",
+      subtitle: "Génie Civil",
+      author: "L'équipe AEC",
       image:
-        "https://api.time.com/wp-content/uploads/2020/07/president-trump-coronavirus-election.jpg?quality=85&w=364&h=204&crop=1",
+        `url(${image2.src})`,
       content:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      tags: ["Coronavirus", "Election", "Politics"],
-      quote:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+        "AEC, qui signifie African and Environmental Construction, est le département spécialisé dans le génie civil avec pour vision de se spécialiser dans les bureaux d’études et dans la réalisation des projets.",
+      tags: ["Construction", "Génie Civil"],
+      quote: "Bâtissons l'avenir avec AEC.",
     },
     {
-      title: "Revenge of the Never Trumpers",
-      subtitle: "Election, Politics",
-      author: "Ahmad Sultani",
+      title: "AJEL ACADEMY - Formations Techniques",
+      subtitle: "Éducation",
+      author: "L'équipe AJEL ACADEMY",
       image:
-        "https://api.time.com/wp-content/uploads/2020/07/never-trumpers-2020-election-01.jpg?quality=85&w=1201&h=676&crop=1",
+        `url(${image3.src})`,
       content:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      tags: ["Election", "people", "Election2020", "trump", "Joe"],
-      quote:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+        "AJEL ACADEMY est le département spécialisé dans les formations courts et longs termes dans des logiciels tels que AutoCAD, ArchiCAD, Adobe, SolidWorks, etc ; et des domaines tels que la conception mécanique, conception architecturale, développement web, etc.",
+      tags: ["Formation", "Techniques", "Logiciels"],
+      quote: "Formez-vous pour un avenir meilleur avec AJEL ACADEMY.",
     },
     {
-      title: "Trump Steps Back Into Coronavirus Spotlight",
-      subtitle: "Politics, Election",
-      author: "John Doe",
+      title: "AJEL CONNECT - Connexion Internet",
+      subtitle: "Connexion",
+      author: "L'équipe AJEL CONNECT",
       image:
-        "https://api.time.com/wp-content/uploads/2020/07/president-trump-coronavirus-election.jpg?quality=85&w=364&h=204&crop=1",
+        `url(${image4.src})`,
       content:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      tags: ["Coronavirus", "Election", "Politics"],
-      quote:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+        "AJEL CONNECT est le département responsable de la distribution de la connexion internet, l’implémentation de l’IPTV (Internet Protocol Television) à domicile et dans les entreprises.",
+      tags: ["Internet", "IPTV"],
+      quote: "Restez connecté avec AJEL CONNECT.",
     },
     {
-      title: "Revenge of the Never Trumpers",
-      subtitle: "Election, Politics",
-      author: "Ahmad Sultani",
+      title: "AJEL STORE - Vente d'Accessoires",
+      subtitle: "Commerce",
+      author: "L'équipe AJEL STORE",
       image:
-        "https://api.time.com/wp-content/uploads/2020/07/never-trumpers-2020-election-01.jpg?quality=85&w=1201&h=676&crop=1",
+        `url(${image5.src})`,
       content:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      tags: ["Election", "people", "Election2020", "trump", "Joe"],
-      quote:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+        "AJEL STORE se charge de la vente de plusieurs accessoires comme des accessoires électroniques, mécaniques, réseautiques, et plus encore.",
+      tags: ["Accessoires", "Commerce"],
+      quote: "Trouvez tout ce dont vous avez besoin chez AJEL STORE.",
     },
     {
-      title: "Trump Steps Back Into Coronavirus Spotlight",
-      subtitle: "Politics, Election",
-      author: "John Doe",
+      title: "DECODE - Développement Informatique",
+      subtitle: "Technologie",
+      author: "L'équipe DECODE",
       image:
-        "https://api.time.com/wp-content/uploads/2020/07/president-trump-coronavirus-election.jpg?quality=85&w=364&h=204&crop=1",
+        `url(${image6.src})`,
       content:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      tags: ["Coronavirus", "Election", "Politics"],
-      quote:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+        "DECODE est le département spécialisé sur le développement informatique. Convaincus que le développement informatique ne se limite pas à la création de sites web ou d’applications, DECODE a pour mission de répondre à tous vos besoins numériques.",
+      tags: ["Développement", "Informatique"],
+      quote: "Innovons ensemble avec DECODE.",
     },
-    {
-      title: "Revenge of the Never Trumpers",
-      subtitle: "Election, Politics",
-      author: "Ahmad Sultani",
-      image:
-        "https://api.time.com/wp-content/uploads/2020/07/never-trumpers-2020-election-01.jpg?quality=85&w=1201&h=676&crop=1",
-      content:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      tags: ["Election", "people", "Election2020", "trump", "Joe"],
-      quote:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-    },
-    {
-      title: "Trump Steps Back Into Coronavirus Spotlight",
-      subtitle: "Politics, Election",
-      author: "John Doe",
-      image:
-        "https://api.time.com/wp-content/uploads/2020/07/president-trump-coronavirus-election.jpg?quality=85&w=364&h=204&crop=1",
-      content:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      tags: ["Coronavirus", "Election", "Politics"],
-      quote:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-    },
-    // Add more articles here...
   ];
 
   return (
@@ -151,19 +125,18 @@ const Actu = () => {
                   className="bg-cover bg-center text-center overflow-hidden"
                   style={{
                     minHeight: "300px",
-                    backgroundImage:
-                      "url('https://api.time.com/wp-content/uploads/2020/07/never-trumpers-2020-election-01.jpg?quality=85&w=1201&h=676&crop=1')",
+                    backgroundImage: `url(${image1.src})`,
                   }}
-                  title="Woman holding a mug"
+                  title="AD NOVA Marketing"
                 ></div>
               </a>
-              <div className="mt-3  rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal">
+              <div className="mt-3 rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal">
                 <div className="">
                   <a
                     href="#"
                     className="text-xs text-indigo-600 uppercase font-medium hover:text-gray-900 transition duration-500 ease-in-out"
                   >
-                    Election
+                    Marketing
                   </a>
                   <a
                     href="#"
@@ -173,11 +146,10 @@ const Actu = () => {
                       handleModalOpen(articles[0]);
                     }}
                   >
-                    Revenge of the Never Trumpers
+                    AD NOVA - Digital Marketing
                   </a>
                   <p className="text-gray-700 text-base mt-2">
-                    Meet the Republican dissidents fighting to push Donald Trump
-                    out of office—and reclaim their party
+                    Augmentez votre chiffre d'affaires et digitalisez votre communication.
                   </p>
                 </div>
               </div>
@@ -185,14 +157,14 @@ const Actu = () => {
 
             <div className="sm:col-span-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
               {articles.slice(1).map((article, index) => (
-                <div key={index} className="">
+                <div key={index}>
                   <a href="#">
                     <div
                       className="h-40 bg-cover text-center overflow-hidden"
                       style={{
-                        backgroundImage: `url(${article.image})`,
+                        backgroundImage: article.image,
                       }}
-                      title="Woman holding a mug"
+                      title={article.title}
                     ></div>
                   </a>
                   <a
@@ -225,24 +197,20 @@ const Actu = () => {
               className="absolute top-0 right-0 p-5"
               onClick={handleModalClose}
             >
-              {
-                <p className="w-6 h-6 fill-gray-900">
-                  <svg
-                    width="32px"
-                    height="32px"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M16 8L8 16M8 8L16 16"
-                      stroke="#000000"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                    />
-                  </svg>
-                </p>
-              }
+              <svg
+                width="32px"
+                height="32px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 8L8 16M8 8L16 16"
+                  stroke="#000000"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                />
+              </svg>
             </button>
             {modalContent}
           </div>

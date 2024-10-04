@@ -25,7 +25,7 @@ const ModalContent: React.FC<ModalContentProps> = ({
         className="bg-cover h-64 text-center overflow-hidden"
         style={{
           height: "450px",
-          backgroundImage: `url(${image})`,
+          backgroundImage: image,
         }}
       ></div>
       <div className="max-w-2xl mx-auto">
@@ -49,7 +49,7 @@ const ModalContent: React.FC<ModalContentProps> = ({
             </p>
             <p className="text-base leading-8 my-5">{content}</p>
             <h3 className="text-2xl font-bold my-5">
-              #1. What is Lorem Ipsum?
+              #1. À Propos ?
             </h3>
             <p className="text-base leading-8 my-5">{content}</p>
             <blockquote className="border-l-4 text-base italic leading-8 my-5 p-5 text-indigo-600">
